@@ -14,6 +14,7 @@ const skills = [
   "Adaptability",
   "Interpersonal Skills",
   "Leadership",
+  "SEM-PLS",
 ];
 
 const strengths = [
@@ -36,14 +37,14 @@ export default function About() {
 
       <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
         <Reveal>
-          <div className="glass-card h-full rounded-3xl p-7 sm:p-9">
+          <div className="h-full py-2 sm:py-4">
             <p className="text-base leading-8 text-zinc-300">
               With a background in Public Administration and Human Resource Management, I bring together an understanding of public policy, organizational dynamics, and people development. I enjoy turning research and collaboration into practical ideas that help organizations grow.
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {strengths.map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-3 rounded-xl border border-white/[0.06] bg-white/[0.025] px-4 py-3">
-                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500/20 to-violet-500/20 text-blue-200">
+                <div key={label} className="flex items-center gap-3 py-2">
+                  <span className="shrink-0 text-blue-200">
                     <Icon size={17} />
                   </span>
                   <span className="text-sm text-zinc-300">{label}</span>
@@ -54,14 +55,14 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={0.1} direction="left">
-          <div className="glass-card h-full rounded-3xl p-7 sm:p-9">
+          <div className="h-full py-2 sm:py-4">
             <h3 className="text-lg font-semibold text-white">Skills &amp; tools</h3>
             <p className="mt-2 text-sm leading-6 text-zinc-500">A toolkit for thoughtful research and effective collaboration.</p>
             <div className="mt-6 flex flex-wrap gap-2">
               {skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-white/[0.08] bg-white/[0.035] px-3.5 py-2 text-xs font-medium text-zinc-300 transition-colors hover:border-blue-400/30 hover:text-blue-200"
+                  className="text-xs font-medium text-zinc-300 transition-colors hover:text-blue-200"
                 >
                   {skill}
                 </span>

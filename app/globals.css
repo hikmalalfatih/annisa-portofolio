@@ -41,27 +41,6 @@ textarea {
   font: inherit;
 }
 
-.page-shell {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-}
-
-.page-shell::before {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 50%;
-  width: min(100%, 1100px);
-  height: 850px;
-  background:
-    radial-gradient(ellipse at 16% 20%, rgba(59, 130, 246, 0.13), transparent 36%),
-    radial-gradient(ellipse at 82% 24%, rgba(168, 85, 247, 0.12), transparent 32%);
-  content: "";
-  pointer-events: none;
-  transform: translateX(-50%);
-}
-
 .section-wrap {
   width: min(100% - 3rem, 1120px);
   margin-inline: auto;
@@ -69,13 +48,6 @@ textarea {
 
 .section-space {
   padding-block: 7rem;
-}
-
-.glass-card {
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.018));
-  box-shadow: 0 18px 70px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(18px);
 }
 
 .eyebrow {
@@ -104,13 +76,6 @@ textarea {
 
 .gradient-line {
   background: linear-gradient(90deg, #3b82f6, #a855f7, transparent);
-}
-
-.grid-pattern {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
-  background-size: 36px 36px;
-  mask-image: linear-gradient(to bottom, black, transparent 88%);
 }
 
 .focus-ring:focus-visible {

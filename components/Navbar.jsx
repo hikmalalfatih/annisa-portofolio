@@ -20,14 +20,14 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4">
-      <nav className="glass-card mx-auto flex max-w-6xl items-center justify-between rounded-2xl px-5 py-3 sm:px-6">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 sm:px-6">
         <a
           href="#home"
           onClick={closeMenu}
           className="focus-ring rounded-lg text-lg font-bold tracking-tight"
-          aria-label="Annisa AZ home"
+          aria-label="Annisa Aulia Zahra home"
         >
-          Annisa <span className="gradient-text">AZ</span>
+          Annisa Aulia Zahra
         </a>
 
         <div className="hidden items-center gap-7 md:flex">
@@ -56,14 +56,14 @@ export default function Navbar() {
         {isOpen ? (
           <div
             id="mobile-navigation"
-            className="absolute inset-x-4 top-[calc(100%+0.5rem)] rounded-2xl border border-white/10 bg-zinc-950/95 p-3 shadow-2xl backdrop-blur-xl md:hidden"
+            className="absolute inset-x-4 top-[calc(100%+0.5rem)] p-3 md:hidden"
           >
             {links.map(([label, href]) => (
               <a
                 key={href}
                 href={href}
                 onClick={closeMenu}
-                className="focus-ring block rounded-xl px-4 py-3 text-sm text-zinc-300 transition-colors hover:bg-white/5 hover:text-white"
+                className="focus-ring block px-4 py-3 text-sm text-zinc-300 transition-colors hover:text-white"
               >
                 {label}
               </a>

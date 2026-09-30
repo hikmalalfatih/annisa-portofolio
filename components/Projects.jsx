@@ -31,7 +31,7 @@ const items = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="border-y border-white/[0.04] bg-white/[0.012]">
+    <section id="projects">
       <div className="section-wrap section-space">
         <Reveal>
           <SectionHeading
@@ -41,18 +41,18 @@ export default function Projects() {
           />
         </Reveal>
 
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item, index) => {
             const Icon = item.icon;
             const iconTone =
               item.accent === "violet"
-                ? "border-violet-400/20 bg-violet-400/[0.09] text-violet-200"
-                : "border-blue-400/20 bg-blue-400/[0.09] text-blue-200";
+                ? "text-violet-200"
+                : "text-blue-200";
             return (
               <Reveal key={item.title} delay={index * 0.08}>
-                <article className="glass-card group flex h-full min-h-[280px] flex-col rounded-2xl p-6 transition-all duration-300 hover:-translate-y-1 hover:border-white/[0.16]">
+                <article className="group flex h-full min-h-[260px] flex-col py-2 transition-transform duration-300 hover:-translate-y-1">
                   <div className="flex items-center justify-between">
-                    <span className={`flex h-11 w-11 items-center justify-center rounded-xl border ${iconTone}`}>
+                    <span className={`flex h-11 w-11 items-center ${iconTone}`}>
                       <Icon size={19} />
                     </span>
                     <span className="text-sm font-medium text-zinc-500">{item.year}</span>
