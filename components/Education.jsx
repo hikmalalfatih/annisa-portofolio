@@ -44,9 +44,9 @@ export default function Education() {
       <div className="grid gap-x-12 gap-y-10 md:grid-cols-2">
         {education.map((item, index) => (
           <Reveal key={item.institution} delay={index * 0.08} className={index === 0 ? "md:col-span-2" : ""}>
-            <article className="h-full py-2">
+            <article className="glass-card h-full rounded-2xl p-6 sm:p-7">
               <div className="flex items-start gap-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center text-violet-200">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-violet-400/15 bg-violet-400/[0.08] text-violet-200">
                   <GraduationCap size={20} />
                 </span>
                 <div className="min-w-0 flex-1">

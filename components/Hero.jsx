@@ -7,7 +7,7 @@ export default function Hero() {
     <section id="home" className="page-shell relative flex min-h-[760px] items-center pt-28 sm:min-h-[820px]">
       <div className="section-wrap grid items-center gap-14 py-16 lg:grid-cols-[1.2fr_0.8fr] lg:gap-8">
         <Reveal>
-          <div className="inline-flex items-center gap-2 text-xs font-medium text-blue-200">
+          <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-400/[0.07] px-4 py-2 text-xs font-medium text-blue-200">
             <Sparkles size={14} aria-hidden="true" />
             Open to meaningful opportunities
           </div>
@@ -47,8 +47,8 @@ export default function Hero() {
         </Reveal>
 
         <Reveal className="relative mx-auto w-full max-w-[390px] lg:ml-auto" delay={0.12} direction="left">
-          <div className="relative aspect-[0.88] overflow-hidden rounded-[2rem]">
-            <div className="relative flex h-full flex-col items-center justify-center overflow-hidden rounded-[1.45rem]">
+          <div className="glass-card relative aspect-[0.88] overflow-hidden rounded-[2rem] p-3">
+            <div className="relative flex h-full flex-col items-center justify-center overflow-hidden rounded-[1.45rem] border border-white/[0.07] bg-[#101015]">
               <Image
                 src="/annisa.JPEG"
                 alt="Annisa Aulia Zahra"
@@ -57,14 +57,14 @@ export default function Hero() {
                 sizes="(max-width: 1024px) 80vw, 390px"
                 className="object-cover object-[50%_38%]"
               />
-              <div className="absolute bottom-7 left-7">
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent px-7 pb-7 pt-14">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-zinc-500">Focus areas</p>
                 <p className="mt-1 text-sm font-medium text-white [text-shadow:0_1px_8px_rgba(0,0,0,0.9)]">Policy · HR · BOD · Risk · Secretary</p>
               </div>
               <div className="absolute right-7 top-7 h-2 w-2 rounded-full bg-blue-400 shadow-[0_0_18px_#3b82f6]" />
             </div>
           </div>
-          <div className="mt-4 px-1">
+          <div className="glass-card mt-4 rounded-2xl px-5 py-4">
             <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-zinc-500">Grounded in</p>
             <p className="mt-1.5 text-sm font-semibold leading-6 text-zinc-100">
               Human Resources Management and Public Administration

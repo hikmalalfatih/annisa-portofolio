@@ -41,8 +41,8 @@ export default function Experience() {
         <div className="relative ml-2 space-y-9 border-l border-white/10 pl-7 sm:ml-4 sm:pl-10">
           {experience.map((item, index) => (
             <Reveal key={item.organization} delay={index * 0.08}>
-              <article className="relative py-2">
-                <span className="absolute -left-[2.15rem] top-3 flex h-5 w-5 items-center justify-center text-blue-300 sm:-left-[3.15rem]">
+              <article className="glass-card relative rounded-2xl p-6 sm:p-8">
+                <span className="absolute -left-[2.15rem] top-8 flex h-8 w-8 items-center justify-center rounded-full border border-blue-400/25 bg-[#111116] text-blue-300 sm:-left-[3.15rem]">
                   <BriefcaseBusiness size={14} />
                 </span>
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
@@ -50,7 +50,7 @@ export default function Experience() {
                     <h3 className="text-lg font-semibold text-white sm:text-xl">{item.role}</h3>
                     <p className="mt-1.5 text-sm font-medium text-blue-200">{item.organization}</p>
                   </div>
-                  <span className="w-fit shrink-0 text-xs font-medium text-zinc-500">
+                  <span className="w-fit shrink-0 rounded-full border border-white/[0.08] bg-white/[0.035] px-3 py-1.5 text-xs font-medium text-zinc-400">
                     {item.period}
                   </span>
                 </div>

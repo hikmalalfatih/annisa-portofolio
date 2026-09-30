@@ -50,6 +50,13 @@ textarea {
   padding-block: 7rem;
 }
 
+.glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(17, 17, 22, 0.78);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(14px);
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;

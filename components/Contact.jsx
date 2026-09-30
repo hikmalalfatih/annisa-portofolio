@@ -74,7 +74,7 @@ export default function Contact() {
 
       <div className="grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
         <Reveal>
-          <div className="h-full py-2 sm:py-4">
+          <div className="glass-card h-full rounded-3xl p-7 sm:p-8">
             <h3 className="text-lg font-semibold text-white">Let&apos;s connect</h3>
             <p className="mt-2 text-sm leading-6 text-zinc-400">
               Have a project, opportunity, or idea in mind? I&apos;d love to hear from you.
@@ -86,9 +86,9 @@ export default function Contact() {
                   href={href}
                   target={href.startsWith("http") ? "_blank" : undefined}
                   rel={href.startsWith("http") ? "noreferrer" : undefined}
-                  className="focus-ring group flex items-center gap-3 py-3 transition-colors"
+                  className="focus-ring group flex items-center gap-3 rounded-xl border border-transparent p-3 transition-colors hover:border-white/[0.07] hover:bg-white/[0.035]"
                 >
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center text-blue-200">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/15 to-violet-500/15 text-blue-200">
                     <Icon size={17} />
                   </span>
                   <span className="min-w-0 flex-1">
@@ -103,7 +103,7 @@ export default function Contact() {
         </Reveal>
 
         <Reveal delay={0.1} direction="left">
-          <form onSubmit={handleSubmit} className="py-2 sm:py-4">
+          <form onSubmit={handleSubmit} className="glass-card rounded-3xl p-7 sm:p-8">
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="block text-sm font-medium text-zinc-300">
                 Name
@@ -114,7 +114,7 @@ export default function Contact() {
                   required
                   maxLength={100}
                   placeholder="Your name"
-                  className="mt-2.5 w-full border-b border-white/20 bg-transparent px-0 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-blue-400"
+                  className="mt-2.5 w-full rounded-xl border border-white/[0.09] bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/10"
                 />
               </label>
               <label className="block text-sm font-medium text-zinc-300">
@@ -126,7 +126,7 @@ export default function Contact() {
                   required
                   maxLength={254}
                   placeholder="you@example.com"
-                  className="mt-2.5 w-full border-b border-white/20 bg-transparent px-0 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-blue-400"
+                  className="mt-2.5 w-full rounded-xl border border-white/[0.09] bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/10"
                 />
               </label>
             </div>
@@ -139,7 +139,7 @@ export default function Contact() {
                 maxLength={5000}
                 rows={5}
                 placeholder="Tell me a little about what you have in mind..."
-                className="mt-2.5 w-full resize-y border-b border-white/20 bg-transparent px-0 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-blue-400"
+                className="mt-2.5 w-full resize-y rounded-xl border border-white/[0.09] bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:text-zinc-600 focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/10"
               />
             </label>
             <div aria-live="polite" className="min-h-6">

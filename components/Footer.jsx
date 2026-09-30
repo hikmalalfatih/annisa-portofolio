@@ -26,12 +26,12 @@ export default function Footer() {
               target={href.startsWith("http") ? "_blank" : undefined}
               rel={href.startsWith("http") ? "noreferrer" : undefined}
               aria-label={label}
-              className="focus-ring flex h-9 w-9 items-center justify-center text-zinc-400 transition-colors hover:text-white"
+              className="focus-ring flex h-9 w-9 items-center justify-center rounded-lg border border-white/[0.07] text-zinc-400 transition-colors hover:border-white/20 hover:text-white"
             >
               <Icon size={15} />
             </a>
           ))}
-          <a href="#home" aria-label="Back to top" className="focus-ring ml-1 flex h-9 w-9 items-center justify-center text-zinc-300 transition-colors hover:text-white">
+          <a href="#home" aria-label="Back to top" className="focus-ring ml-1 flex h-9 w-9 items-center justify-center rounded-lg bg-white/[0.06] text-zinc-300 transition-colors hover:bg-white/[0.12]">
             <ArrowUp size={15} />
           </a>
         </div>
