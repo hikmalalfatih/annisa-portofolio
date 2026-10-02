@@ -6,7 +6,7 @@ const experience = [
   {
     organization: "PT Anugerah Tiga Warna",
     role: "Business Development Manager",
-    period: "Jun 2025 - Present",
+    period: "Jan 2025 - Oct 2025",
     description:
       "Managed over 10 appointments weekly with new and existing clients. Built up massive database of past and current clients and conducted market analysis to source for potential customers.",
   },

@@ -15,7 +15,7 @@ export default function Hero() {
             Hi, I&apos;m <span className="gradient-text">Annisa Aulia Zahra.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg font-medium leading-8 text-zinc-200 sm:text-xl">
-            Policy Analyst, Human Resources, Business and Organizational Development, Policy Analysis & Strategy, Risk Management, Administrative & Secretary
+            Policy Analyst, Human Resources, Business and Organizational Development, Risk Management, Administrative & Secretary
           </p>
           <p className="mt-4 max-w-xl text-base leading-7 text-zinc-400">
             Detail-oriented professionals with a strong interest in Administrative Operations & Secretarial Support, Human Resources Management, Policy Analysis & Strategy, Risk Management and Business & Organizational Development (BOD)

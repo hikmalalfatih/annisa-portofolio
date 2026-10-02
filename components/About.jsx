@@ -15,6 +15,7 @@ const skills = [
   "Interpersonal Skills",
   "Leadership",
   "SEM-PLS",
+  "Team Work"
 ];
 
 const strengths = [
