@@ -4,25 +4,44 @@ import SectionHeading from "./SectionHeading";
 
 const experience = [
   {
+    organization: "Coordinating Ministry for Infrastructure and Regional Development",
+    role: "Staff Secretary, Deputy Coordinating Minister for Basic Infrastructure",
+    period: "Nov 2025 - May 2026",
+    achievements: [
+      "Coordinated 60+ technical meetings with ministries, local governments, internal divisions, and stakeholders to support project monitoring and evaluation.",
+      "Prepared technical reports, meeting minutes, and documentation for 80+ multi-stakeholder discussions, supporting coordination and decision-making.",
+      "Created the D3 strategic plan presentation, 2025 performance report, official visit reports, and other reports.",
+    ],
+  },
+  {
     organization: "PT Anugerah Tiga Warna",
     role: "Business Development Manager",
     period: "Jan 2025 - Oct 2025",
-    description:
-      "Managed over 10 appointments weekly with new and existing clients. Built up massive database of past and current clients and conducted market analysis to source for potential customers.",
+    achievements: [
+      "Created social media campaigns and marketing strategies that supported 50+ product sales across Indonesia.",
+      "Developed the company profile and business strategy using market research to identify prospective clients.",
+      "Reviewed purchase orders for compliance with financial policies, procedures, and contractual requirements, and managed 10+ weekly appointments with new and existing clients.",
+    ],
   },
   {
     organization: "Ministry of National Development Planning (Bappenas)",
     role: "Research Assistant",
     period: "Sep 2023 - Aug 2024",
-    description:
-      "Organized and Analyzed Workshop Methodology Foresight Renstra Bappenas 2025-2029 with 100 employees.",
+    achievements: [
+      "Organized and analyzed the Workshop Methodology Foresight Renstra Bappenas 2025-2029 with 100 Ministry employees.",
+      "Prepared notes for technical meetings on IKK LAN assessment, bureaucratic reform, and IPPN assessment across ministries and institutions.",
+      "Recorded documents required for approval of functional department formation and assisted a bureaucratic reform meeting with 120 Ministry employees.",
+    ],
   },
   {
-    organization: "Ministry Of Finance",
+    organization: "Ministry of Finance",
     role: "Internship",
     period: "Mar 2023 - May 2023",
-    description:
-      "Organized the Town Hall Meeting of the Directorate General of Budget with 800 employees of the Ministry of Finance and attended by the Minister of Finance.",
+    achievements: [
+      "Organized the Directorate General of Budget Town Hall Meeting with 800 Ministry employees, attended by the Minister of Finance.",
+      "Analyzed the mapping of Minister of State Apparatus Utilization and Bureaucratic Reform Regulation No. 1 of 2023 and No. 7 of 2022.",
+      "Joined discussions on organizational and governance reviews, including an innovation proposal for a mineral and coal information system across ministries and institutions.",
+    ],
   },
 ];
 
@@ -54,7 +73,14 @@ export default function Experience() {
                     {item.period}
                   </span>
                 </div>
-                <p className="mt-5 max-w-3xl text-sm leading-7 text-zinc-400">{item.description}</p>
+                <ul className="mt-5 max-w-3xl space-y-2.5">
+                  {item.achievements.map((achievement) => (
+                    <li key={achievement} className="flex gap-3 text-sm leading-7 text-zinc-400">
+                      <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400" aria-hidden="true" />
+                      {achievement}
+                    </li>
+                  ))}
+                </ul>
               </article>
             </Reveal>
           ))}
