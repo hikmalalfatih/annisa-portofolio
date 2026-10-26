@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BriefcaseBusiness } from "lucide-react";
 import Reveal from "./Reveal";
 import DocumentViewer from "./DocumentViewer";
@@ -6,6 +7,7 @@ import SectionHeading from "./SectionHeading";
 const experience = [
   {
     organization: "Coordinating Ministry for Infrastructure and Regional Development",
+    logo: "/logos/logo-kemenkoinfra.png",
     role: "Staff Secretary, Deputy Coordinating Minister for Basic Infrastructure",
     period: "Nov 2025 - May 2026",
     achievements: [
@@ -36,6 +38,7 @@ const experience = [
   },
   {
     organization: "Ministry of National Development Planning (Bappenas)",
+    logo: "/logos/logo-bappenas.png",
     role: "Research Assistant",
     period: "Sep 2023 - Aug 2024",
     achievements: [
@@ -46,6 +49,7 @@ const experience = [
   },
   {
     organization: "Ministry of Finance",
+    logo: "/logos/logo-kemenkeu.png",
     role: "Internship",
     period: "Mar 2023 - May 2023",
     achievements: [
@@ -76,9 +80,22 @@ export default function Experience() {
                   <BriefcaseBusiness size={14} />
                 </span>
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                  <div>
-                    <h3 className="text-lg font-semibold text-white sm:text-xl">{item.role}</h3>
-                    <p className="mt-1.5 text-sm font-medium text-blue-200">{item.organization}</p>
+                  <div className="flex items-start gap-4">
+                    {item.logo && (
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-white p-1">
+                        <Image
+                          src={item.logo}
+                          alt={`${item.organization} logo`}
+                          width={44}
+                          height={44}
+                          className="h-full w-full object-contain"
+                        />
+                      </span>
+                    )}
+                    <div>
+                      <h3 className="text-lg font-semibold text-white sm:text-xl">{item.role}</h3>
+                      <p className="mt-1.5 text-sm font-medium text-blue-200">{item.organization}</p>
+                    </div>
                   </div>
                   <span className="w-fit shrink-0 rounded-full border border-white/[0.08] bg-white/[0.035] px-3 py-1.5 text-xs font-medium text-zinc-400">
                     {item.period}
