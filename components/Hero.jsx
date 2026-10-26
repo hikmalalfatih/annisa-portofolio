@@ -29,7 +29,7 @@ export default function Hero() {
               <ArrowUpRight size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <a
-              href="/Annisa-Aulia-Zahra-CV.pdf"
+              href="/Annisa_Aulia_Zahra-resume.pdf"
               download
               className="focus-ring inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-5 py-3 text-sm font-semibold text-zinc-200 transition-all duration-300 hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/[0.08]"
             >
