@@ -1,10 +1,11 @@
-import { GraduationCap } from "lucide-react";
+import Image from "next/image";
 import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
 const education = [
   {
     institution: "Universitas Brawijaya",
+    logo: "/logos/logo-ub.png",
     programs: [
       { degree: "Master Human Resource Management", result: "GPA: 4.00/4.00" },
       { degree: "Bachelor Public Administration", result: "GPA: 3.85/4.00" },
@@ -12,6 +13,7 @@ const education = [
   },
   {
     institution: "Universitas Indonesia",
+    logo: "/logos/logo-ui.png",
     programs: [
       {
         degree: "Bachelor 5th Semester Student Exchange in Public Administration",
@@ -21,6 +23,7 @@ const education = [
   },
   {
     institution: "Universitas Padjadjaran",
+    logo: "/logos/logo-unpad.png",
     programs: [
       {
         degree: "Bachelor 4th semester student exchange in Public Administration",
@@ -46,8 +49,14 @@ export default function Education() {
           <Reveal key={item.institution} delay={index * 0.08} className={index === 0 ? "md:col-span-2" : ""}>
             <article className="glass-card h-full rounded-2xl p-6 sm:p-7">
               <div className="flex items-start gap-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-violet-400/15 bg-violet-400/[0.08] text-violet-200">
-                  <GraduationCap size={20} />
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-white p-1">
+                  <Image
+                    src={item.logo}
+                    alt={`${item.institution} logo`}
+                    width={44}
+                    height={44}
+                    className="h-full w-full object-contain"
+                  />
                 </span>
                 <div className="min-w-0 flex-1">
                   <h3 className="text-lg font-semibold text-white">{item.institution}</h3>
