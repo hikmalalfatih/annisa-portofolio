@@ -27,14 +27,6 @@ const items = [
     icon: FileText,
     accent: "blue",
   },
-  {
-    type: "Project",
-    year: "2026",
-    title: "Harmonization of the Deputy for Basic Infrastructure Coordination Strategic Plan 2025-2029",
-    detail: "Harmonization presentation for the Deputy for Basic Infrastructure Coordination strategic plan, prepared as Staff Secretary to the Deputy Coordinating Minister for Basic Infrastructure.",
-    icon: FileText,
-    accent: "blue",
-  },
 ];
 
 export default function Projects() {
