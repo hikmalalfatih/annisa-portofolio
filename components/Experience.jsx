@@ -1,5 +1,6 @@
 import { BriefcaseBusiness } from "lucide-react";
 import Reveal from "./Reveal";
+import DocumentViewer from "./DocumentViewer";
 import SectionHeading from "./SectionHeading";
 
 const experience = [
@@ -12,6 +13,10 @@ const experience = [
       "Prepared technical reports, meeting minutes, and documentation for 80+ multi-stakeholder discussions, supporting coordination and decision-making.",
       "Created the D3 strategic plan presentation, 2025 performance report, official visit reports, and other reports.",
     ],
+    document: {
+      label: "View the Renstra D3 2025-2029 presentation",
+      src: "/Paparan_Renstra_D3_rev.pdf",
+    },
   },
   {
     organization: "PT Anugerah Tiga Warna",
@@ -81,6 +86,9 @@ export default function Experience() {
                     </li>
                   ))}
                 </ul>
+                {item.document && (
+                  <DocumentViewer label={item.document.label} src={item.document.src} />
+                )}
               </article>
             </Reveal>
           ))}
