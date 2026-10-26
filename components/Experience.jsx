@@ -16,6 +16,12 @@ const experience = [
     document: {
       label: "View the Renstra D3 2025-2029 presentation",
       src: "/Paparan_Renstra_D3_rev.pdf",
+      title: "Harmonization of the Deputy for Basic Infrastructure Coordination Strategic Plan 2025-2029",
+      summary: "April 2026 · 24 pages · Harmonization of the Deputy strategic plan with the Coordinating Ministry strategic plan.",
+      outputs: [
+        "2025 performance report",
+        "Official visit reports and other reports",
+      ],
     },
   },
   {
@@ -87,7 +93,20 @@ export default function Experience() {
                   ))}
                 </ul>
                 {item.document && (
-                  <DocumentViewer label={item.document.label} src={item.document.src} />
+                  <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6">
+                    <p className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-200">Selected work</p>
+                    <h4 className="mt-2 text-base font-semibold leading-6 text-white">{item.document.title}</h4>
+                    <p className="mt-2 text-sm leading-6 text-zinc-400">{item.document.summary}</p>
+                    <ul className="mt-4 space-y-2">
+                      {item.document.outputs.map((output) => (
+                        <li key={output} className="flex gap-3 text-sm leading-6 text-zinc-400">
+                          <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-400" aria-hidden="true" />
+                          {output}
+                        </li>
+                      ))}
+                    </ul>
+                    <DocumentViewer label={item.document.label} src={item.document.src} />
+                  </div>
                 )}
               </article>
             </Reveal>
