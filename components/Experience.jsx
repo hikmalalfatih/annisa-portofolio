@@ -11,9 +11,10 @@ const experience = [
     role: "Staff Secretary, Deputy Coordinating Minister for Basic Infrastructure",
     period: "Nov 2025 - May 2026",
     achievements: [
-      "Coordinated 60+ technical meetings with ministries, local governments, internal divisions, and stakeholders to support project monitoring and evaluation.",
-      "Prepared technical reports, meeting minutes, and documentation for 80+ multi-stakeholder discussions, supporting coordination and decision-making.",
-      "Created the D3 strategic plan presentation, 2025 performance report, official visit reports, and other reports.",
+      "Prepared Performance Agreements, Key Performance Indicators, Action Plans, and Employee Performance Targets, and produced the ministry's 2025 annual performance report and monthly activity reports; the 2025 report recorded an overall organizational performance score of 110.87% against targets, with 3 of 5 key indicators exceeding 100% achievement.",
+      "Coordinated 60+ technical meetings with ministries, local governments, and internal divisions to support monitoring of infrastructure priority programs.",
+      "Documented 80+ multi-stakeholder discussions through minutes and technical reports, supporting leadership decision-making and follow-up.",
+      "Prepared technical training materials on performance evaluation, government report writing, and the strategic plan presentation, and arranged 10+ business trips, liaising with hotels and travel providers.",
     ],
     document: {
       label: "View the Renstra D3 2025-2029 presentation",
@@ -29,11 +30,23 @@ const experience = [
   {
     organization: "PT Anugerah Tiga Warna",
     role: "Business Development Manager",
-    period: "Jan 2025 - Oct 2025",
+    period: "Aug 2025 - Sep 2026",
     achievements: [
-      "Created social media campaigns and marketing strategies that supported 50+ product sales across Indonesia.",
-      "Developed the company profile and business strategy using market research to identify prospective clients.",
-      "Reviewed purchase orders for compliance with financial policies, procedures, and contractual requirements, and managed 10+ weekly appointments with new and existing clients.",
+      "Built business development strategy and company profile from market research targeting apartments, offices, and commercial buildings.",
+      "Designed social media campaigns and marketing strategy that generated approximately 150 sales across Indonesia over 14 months, including 50+ sales within the first 5 months, through 10+ weekly client meetings.",
+      "Managed end-to-end sales pipeline, client database, and PO compliance review.",
+      "Liaised with internal operations and external stakeholders to ensure smooth onboarding of new clients.",
+    ],
+  },
+  {
+    organization: "Universitas Brawijaya",
+    logo: "/logos/logo-ub.png",
+    role: "Personal Assistant to the Chair of the Management Master Program",
+    period: "Jan 2025 - Jul 2025",
+    achievements: [
+      "Supported academic quality assurance through accurate data entry for the monitoring and evaluation of 10 master's course portfolios.",
+      "Coordinated 2 online and offline academic and non-academic events for the postgraduate program.",
+      "Assisted a community-service project by designing presentation materials and drafting articles on organizational-behavior training for teachers at SMK Yadika Bangil.",
     ],
   },
   {
@@ -42,9 +55,10 @@ const experience = [
     role: "Research Assistant",
     period: "Sep 2023 - Aug 2024",
     achievements: [
-      "Organized and analyzed the Workshop Methodology Foresight Renstra Bappenas 2025-2029 with 100 Ministry employees.",
-      "Prepared notes for technical meetings on IKK LAN assessment, bureaucratic reform, and IPPN assessment across ministries and institutions.",
-      "Recorded documents required for approval of functional department formation and assisted a bureaucratic reform meeting with 120 Ministry employees.",
+      "Supported organizational restructuring by preparing documentation for the formation of functional positions after delayering, including job analysis, job descriptions, and workload analysis; the documentation was applied to echelon III–IV levels across all Bappenas work units.",
+      "Researched the post-delayering functional position work system through 15 in-depth interviews; the recommendations were followed up as issues informing the strategic plan of the Bureau of Organization and Governance.",
+      "Facilitated and analyzed the Foresight Strategic Plan workshop (Renstra 2025–2029) for 100 ministry employees; issues identified through foresight methodology were revisited and incorporated into the finalized Renstra 2025–2029.",
+      "Documented technical meetings on organizational performance evaluation (IKK, RB, and IPPN assessments) and supported bureaucratic reform sessions with 120 employees.",
     ],
   },
   {
@@ -53,9 +67,9 @@ const experience = [
     role: "Internship",
     period: "Mar 2023 - May 2023",
     achievements: [
-      "Organized the Directorate General of Budget Town Hall Meeting with 800 Ministry employees, attended by the Minister of Finance.",
-      "Analyzed the mapping of Minister of State Apparatus Utilization and Bureaucratic Reform Regulation No. 1 of 2023 and No. 7 of 2022.",
-      "Joined discussions on organizational and governance reviews, including an innovation proposal for a mineral and coal information system across ministries and institutions.",
+      "Analyzed and mapped MenPAN-RB Regulations No. 1/2023 and No. 7/2022 on functional positions and bureaucratic reform to support HR policy compliance.",
+      "Organized a Town Hall for 800 employees attended by the Minister of Finance, covering protocol, logistics, and coordination.",
+      "Supported the organization and governance team on an innovation proposal for the Directorate General's innovation competency.",
     ],
   },
 ];
@@ -133,3 +147,4 @@ export default function Experience() {
     </section>
   );
 }
+

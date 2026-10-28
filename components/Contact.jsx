@@ -14,14 +14,14 @@ const directLinks = [
   },
   {
     label: "Email",
-    value: "nnisaulz17@gmail.com",
-    href: "mailto:nnisaulz17@gmail.com",
+    value: "annisaauliaaz@gmail.com",
+    href: "mailto:annisaauliaaz@gmail.com",
     icon: Mail,
   },
   {
     label: "WhatsApp",
     value: "Start a conversation",
-    href: "https://wa.me/6285695185969",
+    href: "https://wa.me/6289502147960",
     icon: Phone,
   },
 ];
@@ -173,3 +173,4 @@ export default function Contact() {
     </section>
   );
 }
+

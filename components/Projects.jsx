@@ -13,9 +13,9 @@ const items = [
   },
   {
     type: "Project",
-    year: "2025",
-    title: "Publishing Scientific Article on Q1 Emerald",
-    detail: "Dynamic Capabilities of Work Innovative Behavior in Islamic Digital Banking Service.",
+    year: "2026",
+    title: "OJK Regulatory Framework Research",
+    detail: "SEM-PLS study of 150 OJK officials on procurement planning, systems, and regulations and provider-selection success; regulations emerged as the strongest factor.",
     icon: FileText,
     accent: "violet",
   },
@@ -23,7 +23,7 @@ const items = [
     type: "Project",
     year: "2024",
     title: "Publishing Scientific Article on Sinta 3 JIAP",
-    detail: "Quality Optimisation of Electronic-Based Goverment Systems.",
+    detail: "Quality optimization of electronic-based government systems (SPBE) through the COBIT framework in Tangerang Regency.",
     icon: FileText,
     accent: "blue",
   },
@@ -72,3 +72,4 @@ export default function Projects() {
     </section>
   );
 }
+

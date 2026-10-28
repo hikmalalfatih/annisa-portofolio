@@ -7,8 +7,16 @@ const education = [
     institution: "Universitas Brawijaya",
     logo: "/logos/logo-ub.png",
     programs: [
-      { degree: "Master Human Resource Management", result: "GPA: 4.00/4.00" },
-      { degree: "Bachelor Public Administration", result: "GPA: 3.85/4.00" },
+      {
+        degree: "Master of Management",
+        result: "GPA: 4.00/4.00",
+        detail: "Fast-track program · Aug 2025 – Jul 2026 · Thesis on transformational leadership and innovative work behavior, with knowledge sharing and creative self-efficacy as mediators (PT Pos Indonesia, n = 216, SEM-PLS) · Published in Sinta 4 (JKI).",
+      },
+      {
+        degree: "Bachelor of Public Administration",
+        result: "GPA: 3.85/4.00",
+        detail: "Aug 2021 – Jun 2025 · Published in Sinta 3 (JIAP): quality optimization of electronic-based government systems (SPBE) through the COBIT framework in Tangerang Regency.",
+      },
     ],
   },
   {
@@ -17,7 +25,7 @@ const education = [
     programs: [
       {
         degree: "Bachelor 5th Semester Student Exchange in Public Administration",
-        result: "GPA: 3.87/4.00",
+        result: "GPA: 3.85/4.00",
       },
     ],
   },
@@ -65,6 +73,9 @@ export default function Education() {
                       <div key={program.degree} className="border-l border-white/10 pl-4">
                         <p className="text-sm leading-6 text-zinc-300">{program.degree}</p>
                         <p className="mt-1.5 text-xs font-medium text-blue-200">{program.result}</p>
+                        {program.detail ? (
+                          <p className="mt-1.5 text-xs leading-6 text-zinc-500">{program.detail}</p>
+                        ) : null}
                       </div>
                     ))}
                   </div>
@@ -77,3 +88,4 @@ export default function Education() {
     </section>
   );
 }
+

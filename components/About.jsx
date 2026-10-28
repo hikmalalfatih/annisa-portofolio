@@ -4,18 +4,24 @@ import SectionHeading from "./SectionHeading";
 
 const skills = [
   "Qualitative & Quantitative Research",
+  "Organizational Design",
+  "Performance Management",
+  "HR Data Analysis",
+  "Stakeholder Management",
+  "Government Liaison",
   "Microsoft Office",
   "Google Workspace",
   "SPSS",
   "STATA",
-  "Canva",
-  "Problem Solving",
-  "Analytical Thinking",
-  "Adaptability",
-  "Interpersonal Skills",
-  "Leadership",
   "SEM-PLS",
-  "Team Work"
+  "Canva",
+  "Integrity",
+  "Teamwork",
+  "Critical & Analytical Thinking",
+  "Adaptability",
+  "Problem Solving",
+  "Leadership",
+  "Creative Self-Efficacy",
 ];
 
 const strengths = [
@@ -40,7 +46,7 @@ export default function About() {
         <Reveal>
           <div className="glass-card h-full rounded-3xl p-7 sm:p-9">
             <p className="text-base leading-8 text-zinc-300">
-              With a background in Public Administration and Human Resource Management, I bring together an understanding of public policy, organizational dynamics, and people development. I enjoy turning research and collaboration into practical ideas that help organizations grow.
+              Organization Development professional with a Master of Management (GPA 4.00/4.00) and 2+ years of experience in organizational structure, functional position design, performance management, and bureaucratic reform at Bappenas, the Ministry of Finance, and the Coordinating Ministry for Infrastructure and Regional Development. I enjoy turning research, HR data analysis, and multi-stakeholder coordination into practical ideas that help organizations grow.
             </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {strengths.map(({ icon: Icon, label }) => (
@@ -75,3 +81,4 @@ export default function About() {
     </section>
   );
 }
+

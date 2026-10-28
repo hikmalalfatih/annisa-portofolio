@@ -6,8 +6,8 @@ const links = [
     href: "https://www.linkedin.com/in/annisa-aulia-zahra/",
     icon: Linkedin,
   },
-  { label: "Email", href: "mailto:nnisaulz17@gmail.com", icon: Mail },
-  { label: "WhatsApp", href: "https://wa.me/6285695185969", icon: Phone },
+  { label: "Email", href: "mailto:annisaauliaaz@gmail.com", icon: Mail },
+  { label: "WhatsApp", href: "https://wa.me/6289502147960", icon: Phone },
 ];
 
 export default function Footer() {
@@ -39,3 +39,4 @@ export default function Footer() {
     </footer>
   );
 }
+

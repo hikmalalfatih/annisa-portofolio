@@ -8,13 +8,13 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Annisa Aulia Zahra | Policy & Business Development",
+  title: "Annisa Aulia Zahra | Organization Development",
   description:
-    "The portfolio of Annisa Aulia Zahra — policy analyst, human resources professional, and business and organization development enthusiast.",
+    "The portfolio of Annisa Aulia Zahra — Organization Development professional with a Master of Management, experienced in organizational structure, performance management, and bureaucratic reform.",
   openGraph: {
     title: "Annisa Aulia Zahra | Portfolio",
     description:
-      "Policy analysis, human resources, and business development — explore Annisa's experience, education, and projects.",
+      "Organization development, performance management, and bureaucratic reform — explore Annisa's experience, education, and projects.",
     type: "website",
   },
 };
